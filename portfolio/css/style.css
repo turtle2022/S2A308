@@ -21,7 +21,7 @@ a{
     padding:15px 40px;
     text-decoration: none;
 }
-a:hover:nth-child(even){
+a:hover:nth-child(n){
     background-color: white;
     border:0.6px solid ;
 }
@@ -95,7 +95,7 @@ td {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #fff;
+  background-color: #1eff00;
   box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
@@ -361,8 +361,27 @@ About
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
+/*--------------------------------
+Photo
+--------------------------------*/
+.box-row{
+  display:flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.box-row img{
+  max-width:100%;
+  border-radius: 5px;
+}
+@media screen and (max-width: 780%) {
+  .box-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /*--------------------------------
 ページトップ
 ---------------------------------*/
